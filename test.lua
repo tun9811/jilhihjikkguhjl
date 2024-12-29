@@ -135,30 +135,30 @@ function CheckQuest()
             NameMon = "Military Spy"
             CFrameQuest = CFrame.new(-5313.37012, 10.9500084, 8515.29395, -0.363785148, 0, 0.93148309, 0, 1, 0, -0.93148309, 0, -0.363785148)
             CFrameMon = CFrame.new(-5906, 164, 8856)
-        elseif MyLevel == 375 and MyLevel <= 399 or SelectMonter == "Fishman Warrior" then
+        elseif MyLevel == 375 or MyLevel <= 399 or SelectMonter == "Fishman Warrior" then
             Mon = "Fishman Warrior"
-            NameQuest = "SkyExp1Quest"
+            NameQuest = "FishmanQuest"
             LevelQuest = 1
             NameMon = "Fishman Warrior"
-            CFrameQuest = CFrame.new(61121.1094, 17.953125, 1564.52637, -0.992583513, 0, 0.121565141, 0, 1, 0, -0.121565141, 0, -0.992583513)
+            CFrameQuest = CFrame.new(61121.1094, 17.953125, 1564.52637, -0.913477898, 0, -0.406888306, 0, 1, 0, 0.406888306, 0, -0.913477898)
             CFrameMon = CFrame.new(60895, 106, 1540)
 			if _G.AutoFarm and (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 10000 then
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625, 11.6796875, 1819.7841796875))
 			end
 		elseif MyLevel == 400 or MyLevel <= 449 or SelectMonter == "Fishman Commando" then
             Mon = "Fishman Commando"
-            LevelQuest = 2
             NameQuest = "FishmanQuest"
+            LevelQuest = 2
             NameMon = "Fishman Commando"
-            CFrameQuest = CFrame.new(61122.65234375, 18.497442245483, 1569.3997802734)
+            CFrameQuest = CFrame.new(61121.1094, 17.953125, 1564.52637, -0.913477898, 0, -0.406888306, 0, 1, 0, 0.406888306, 0, -0.913477898)
             CFrameMon = CFrame.new(61811, 135, 1396)
             if _G.AutoFarm and (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 10000 then
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625, 11.6796875, 1819.7841796875))
             end
         elseif MyLevel == 450 or MyLevel <= 474 or SelectMonter == "God's Guard" then
             Mon = "God's Guard"
-            LevelQuest = 1
             NameQuest = "SkyExp1Quest"
+            LevelQuest = 1
             NameMon = "God's Guard"
             CFrameQuest = CFrame.new(-4721.88867, 843.874695, -1949.96643, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
             CFrameMon = CFrame.new(-4780, 986, -1902)
@@ -167,8 +167,8 @@ function CheckQuest()
             end
         elseif MyLevel == 475 or MyLevel <= 524 or SelectMonter == "Shanda" then
             Mon = "Shanda"
-            LevelQuest = 2
             NameQuest = "SkyExp1Quest"
+            LevelQuest = 2
             NameMon = "Shanda"
             CFrameQuest = CFrame.new(-7859.09814, 5544.19043, -381.476196, -0.422592998, 0, 0.906319618, 0, 1, 0, -0.906319618, 0, -0.422592998)
             CFrameMon = CFrame.new(-7686, 5620, -452)
@@ -177,29 +177,29 @@ function CheckQuest()
             end
         elseif MyLevel == 525 or MyLevel <= 549 or SelectMonter == "Royal Squad" then
             Mon = "Royal Squad"
-            LevelQuest = 1
             NameQuest = "SkyExp2Quest"
+            LevelQuest = 1
             NameMon = "Royal Squad"
             CFrameQuest = CFrame.new(-7906.81592, 5634.6626, -1411.99194, 0, 0, -1, 0, 1, 0, 1, 0, 0)
             CFrameMon = CFrame.new(-7620, 5727, -1481)
         elseif MyLevel == 550 or MyLevel <= 624 or SelectMonter == "Royal Soldier" then
             Mon = "Royal Soldier"
-            LevelQuest = 2
             NameQuest = "SkyExp2Quest"
+            LevelQuest = 2
             NameMon = "Royal Soldier"
             CFrameQuest = CFrame.new(-7906.81592, 5634.6626, -1411.99194, 0, 0, -1, 0, 1, 0, 1, 0, 0)
             CFrameMon = CFrame.new(-7755, 5723, -1806)
         elseif MyLevel == 625 or MyLevel <= 649 or SelectMonter == "Galley Pirate" then
             Mon = "Galley Pirate"
-            LevelQuest = 1
             NameQuest = "FountainQuest"
+            LevelQuest = 1
             NameMon = "Galley Pirate"
             CFrameQuest = CFrame.new(5259.81982, 37.3500175, 4050.0293, 0.087131381, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, 0.087131381)
             CFrameMon = CFrame.new(5541, 158, 3959)
         elseif MyLevel >= 650 or SelectMonter == "Galley Captain" then
             Mon = "Galley Captain"
-            LevelQuest = 2
             NameQuest = "FountainQuest"
+            LevelQuest = 2
             NameMon = "Galley Captain"
             CFrameQuest = CFrame.new(5259.81982, 37.3500175, 4050.0293, 0.087131381, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, 0.087131381)
             CFrameMon = CFrame.new(5691, 114, 4961)
@@ -1734,7 +1734,7 @@ spawn(function()
                     if _G.AutoFarm and StartMagnet and (v.Name == "Bandit" 
                         or v.Name == "Monkey" 
                         or v.Name == "Gorilla" 
-                        or v.Name == "Dragon Crew Archer [Lv. 1600]") 
+                        or v.Name == "Fishman Warrior") 
                     then
                         ManageEnemy(v, bringDistance)
                     end
