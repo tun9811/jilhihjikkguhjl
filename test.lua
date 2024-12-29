@@ -1439,15 +1439,15 @@ while wait(.1) do
     if Type == 1 then
         Pos = CFrame.new(0,PosY,0)
     elseif Type == 2 then
-        Pos = CFrame.new(0,PosY,-30)
+        Pos = CFrame.new(0,PosY,-25)
     elseif Type == 3 then
-        Pos = CFrame.new(30,PosY,0)
+        Pos = CFrame.new(25,PosY,0)
     elseif Type == 4 then
-        Pos = CFrame.new(0,PosY,30)	
+        Pos = CFrame.new(0,PosY,25)	
     elseif Type == 5 then
-        Pos = CFrame.new(-30,PosY,0)
+        Pos = CFrame.new(-25,PosY,0)
     elseif Type == 6 then
-        Pos = CFrame.new(0,35,0)
+        Pos = CFrame.new(0,30,0)
     end
     end
 end)
@@ -1455,15 +1455,15 @@ end)
 spawn(function()
 while wait(.1) do
     Type = 1
-    wait(0.5)
+    wait(0.7)
     Type = 2
-    wait(0.5)
+    wait(0.7)
     Type = 3
-    wait(0.5)
+    wait(0.7)
     Type = 4
-    wait(0.5)
+    wait(0.7)
     Type = 5
-    wait(0.5)
+    wait(0.7)
 end
 end)
 
