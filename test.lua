@@ -1734,7 +1734,29 @@ spawn(function()
                     if _G.AutoFarm and StartMagnet and (v.Name == "Bandit" 
                         or v.Name == "Monkey" 
                         or v.Name == "Gorilla" 
-                        or v.Name == "Fishman Warrior") 
+                        or v.Name == "Pirate"
+						or v.Name == "Brute"
+						or v.Name == "Desert Bandit"
+						or v.Name == "Desert Officer"
+						or v.Name == "Snow Bandit"
+						or v.Name == "Snowman"
+						or v.Name == "Chief Petty Officer"
+						or v.Name == "Sky Bandit"
+						or v.Name == "Dark Master"
+						or v.Name == "Prisoner"
+						or v.Name == "Dangerous Prisoner"
+						or v.Name == "Toga Warrior"
+						or v.Name == "Gladiator"
+						or v.Name == "Military Soldier"
+						or v.Name == "Military Spy"
+						or v.Name == "Fishman Warrior"
+						or v.Name == "Fishman Commando"
+						or v.Name == "God's Guard"
+						or v.Name == "Shanda"
+						or v.Name == "Royal Squad"
+						or v.Name == "Royal Soldier"
+						or v.Name == "Galley Pirate"
+						or v.Name == "Galley Captain")
                     then
                         ManageEnemy(v, bringDistance)
                     end
