@@ -1455,15 +1455,15 @@ end)
 spawn(function()
 while wait(.1) do
     Type = 1
-    wait(0.7)
+    wait(1.5)
     Type = 2
-    wait(0.7)
+    wait(1.5)
     Type = 3
-    wait(0.7)
+    wait(1.5)
     Type = 4
-    wait(0.7)
+    wait(1.5)
     Type = 5
-    wait(0.7)
+    wait(1.5)
 end
 end)
 
